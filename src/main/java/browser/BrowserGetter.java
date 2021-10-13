@@ -16,7 +16,7 @@ public class BrowserGetter {
      */
 
     public WebDriver getWinChromeDriver() {
-        setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriver.exe");
+        setProperty("webdriver.chrome.driver", "C:\\Users\\ismail\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         return driver;
@@ -27,13 +27,13 @@ public class BrowserGetter {
             throw new RuntimeException("Could not initialize browser due to unknown operating system!");
         }
         if (IS_OS_WINDOWS) {
-            setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriver.exe");
+            setProperty("webdriver.chrome.driver", "C:\\Users\\ismail\\chromedriver.exe");
         }
         if (IS_OS_LINUX) {
-            setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriver");
+            setProperty("webdriver.chrome.driver", "sC:\\Users\\ismail\\chromedriver.exe");
         }
         if (IS_OS_MAC) {
-            setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriverMac");
+            setProperty("webdriver.chrome.driver", "sC:\\Users\\ismail\\chromedriver.exe");
         }
 
         WebDriver driver = new ChromeDriver();
@@ -46,13 +46,13 @@ public class BrowserGetter {
             throw new RuntimeException("Could not initialize browser due to unknown operating system!");
         }
         if (IS_OS_WINDOWS) {
-            setProperty("webdriver.gecko.driver", "src/test/resources/browserBinaries/geckodriver.exe");
+            setProperty("webdriver.gecko.driver", "C:\\Users\\ismail\\chromedriver.exe");
         }
         if (IS_OS_LINUX) {
-            setProperty("webdriver.gecko.driver", "src/test/resources/browserBinaries/geckodriver");
+            setProperty("webdriver.gecko.driver", "C:\\Users\\ismail\\chromedriver.exe");
         }
         if (IS_OS_MAC) {
-            setProperty("webdriver.gecko.driver", "src/test/resources/browserBinaries/geckodriverMac");
+            setProperty("webdriver.gecko.driver", "sC:\\Users\\ismail\\chromedriver.exe");
         }
 
         WebDriver driver = new FirefoxDriver();
@@ -78,13 +78,13 @@ public class BrowserGetter {
             throw new RuntimeException("Could not initialize browser due to unknown operating system!");
         }
         if (IS_OS_WINDOWS) {
-            setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriver.exe");
+            setProperty("webdriver.chrome.driver", "C:\\Users\\ismail\\chromedriver.exe");
         }
         if (IS_OS_LINUX) {
-            setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriver");
+            setProperty("webdriver.chrome.driver", "C:\\Users\\ismail\\chromedriver.exe");
         }
         if (IS_OS_MAC) {
-            setProperty("webdriver.chrome.driver", "src/test/resources/browserBinaries/chromedriverMac");
+            setProperty("webdriver.chrome.driver", "C:\\Users\\ismail\\chromedriver.exe");
         }
 
         WebDriver driver = new ChromeDriver();
